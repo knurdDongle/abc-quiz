@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server -d --env.development",
     "clean": "rimraf dist/*",
-    "build": "npm run clean && webpack -p --env.production",
-    "deploy": "gh-pages -d dist",
-    "pages:build": "npm run clean && BUILD=pages webpack -p --progress --colors --env.production"
+    "build": "npm run clean && webpack -p --progress --colors --env.production",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Safronov Ilya",
   "license": "ISC",
